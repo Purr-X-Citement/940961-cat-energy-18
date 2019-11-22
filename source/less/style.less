@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  background: #ffffff;
+  margin: 0;
+}
+
+.container {
+   width: 320px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.title {
+   .large-title(black, 36px);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+     .hidden();
+}
+
+@import "mixins.less";
+@import "variables.less";
+
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+
+@import "blocks/page-main.less";
+@import "blocks/program-start.less";
+@import "blocks/categories.less";
+@import "blocks/features.less";
+@import "blocks/before-after.less";
+
+@import "blocks/catalog-main.less";
+@import "blocks/products.less";
+
+@import "blocks/page-footer.less";
+@import "blocks/contacts.less";
+@import "blocks/socials.less";
+@import "blocks/copyright.less";
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswaldregular.woff) format("woff"), url(../fonts/oswaldregular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswaldmedium.woff) format("woff"), url(../fonts/oswaldmedium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}

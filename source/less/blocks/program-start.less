@@ -1,0 +1,31 @@
+.program-start {
+  background-color: #ffffff;
+  background-image: url("../../img/index-background-mobile@1x.jpg"), url("../../img/index-background-mobile@2x.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: top center;
+}
+
+.program-start .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  padding-top: 29px;
+
+}
+
+.program-start__title {
+  .large-title(white, 36px);
+
+  max-width: 249px;
+}
+
+.program-start__slogan {
+  .small-title(white, 14px, 14px);
+}
+
+.program-start__button {
+  .link-style();
+  .button-style();
+}
