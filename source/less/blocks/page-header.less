@@ -5,7 +5,69 @@
 .page-header .container {
   display: flex;
   justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
 
   padding-top: 11px;
   padding-bottom: 15px;
+}
+
+.page-header__logo-image--tablet {
+  display: none;
+}
+
+.page-header__logo-image--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-header {
+    border: none;
+  }
+
+  .page-header .container {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-header--index {
+    background-image: url("../../img/index-background-desktop@1x.jpg"), url("../../img/index-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: none;
+  }
+
+  .page-header .container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 53px;
+    padding-bottom: 34px;
+  }
+
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: none;
+  }
+
+  .page-header__logo-image--desktop {
+    display: block;
+  }
+
 }

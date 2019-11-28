@@ -47,3 +47,39 @@
   background-color: @grey;
   color: #444444;
 }
+
+@media (min-width: @tablet-width) {
+  .products__list {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    max-width: 708px;
+  }
+
+  .product {
+    flex-basis: 324px;
+    padding-top: 140px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .product .container {
+    background-color: @grey;
+    padding: 40px 37px;
+  }
+
+  .product:last-child .container {
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__list {
+    max-width: 1220px;
+  }
+
+  .product {
+    flex-basis: 245px;
+  }
+}

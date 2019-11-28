@@ -1,5 +1,4 @@
 .program-start {
-  background-color: #ffffff;
   background-image: url("../../img/index-background-mobile@1x.jpg"), url("../../img/index-background-mobile@2x.jpg");
   background-repeat: no-repeat, repeat-x;
   background-position: top center;
@@ -28,4 +27,97 @@
 .program-start__button {
   .link-style();
   .button-style();
+}
+
+.program-start__can-image {
+  &--tablet {
+    display: none;
+  }
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .program-start {
+    background-image: none;
+  }
+
+  .program-start .container {
+    position: relative;
+    align-items: flex-start;
+    padding-left: 60px;
+  }
+
+  .program-start__title {
+    .large-title(#111111, 60px);
+    font-size: 60px;
+    max-width: 430px;
+    text-align: left;
+  }
+
+  .program-start__slogan {
+    .small-title(#111111, 20px, 20px);
+    margin-top: 33px;
+    margin-bottom: 48px;
+  }
+
+  .program-start__can-image {
+    &--tablet {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 225px;
+      right: 65px;
+    }
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .program-start__button {
+    align-self: flex-start;
+    padding-left: 26px;
+    padding-right: 28px;
+    margin-bottom: 530px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-start {
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: top 120% right;
+  }
+
+  .program-start .container {
+    padding-top: 118px;
+    padding-left: 80px;
+  }
+
+  .program-start__slogan {;
+    margin-bottom: 53px;
+  }
+
+  .program-start__button {
+    margin-bottom: 188px;;
+  }
+
+  .program-start__can-image {
+    &--desktop {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 447px;
+    }
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: none;
+    }
+  }
 }

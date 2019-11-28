@@ -2,11 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 22px;
 }
 
 .copyright__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .link-style();
   .small-text(#444444);
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-top: none;
+  }
+
+  .copyright__link:last-child {
+    margin-left: 23px;
+  }
 }

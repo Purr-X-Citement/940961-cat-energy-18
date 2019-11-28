@@ -1,11 +1,30 @@
 .page-title {
-  .large-title(black, 60px);
   padding-top: 19px;
   padding-bottom: 23px;
+
   border-bottom: 1px solid #ededed;
 
 }
 
+.page-title .container {
+  .large-title(#111111, 60px);
+  margin: 0 auto;
+}
+
 .catalog-main + .page-footer .contacts {
   background-color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    border-bottom: none;
+  }
+
+  .page-title .container {
+    padding-top: 37px;
+    padding-bottom: 15px;
+
+    font-size: 60px;
+    text-align: left;
+  }
 }
